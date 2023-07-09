@@ -1,17 +1,4 @@
-<h1>Ecom Store</h1>
-<table border="1">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let product of products">
-      <td>{{product.name}}</td>
-      <td>{{product.description}}</td>
-      <td>{{product.unitPrice | currency: 'USD' }}</td>
-    </tr>
-  </tbody>
-</table>
+<div>
+  <h1>Ecom Store</h1>
+  <app-product-list></app-product-list>
+</div>

@@ -12,27 +12,6 @@ import { Decimal } from 'decimal.js';
 })
 export class AppComponent {
 
-  products: Product []=[
-
-    
-      {
-        sku: "text-100",
-        name: "C Programming Language",
-        description: "Learn C Programming Language",
-        unitPrice: 600.00,
-        imageUrl: "assets/images/books/text-100.png",
-        active: true,
-        unitsInStock: 100,
-        createdOn: new Date(),
-        updatedOn: new Date(),
-       
-
-
-
-      }
-
-
-
-  ]
+ 
  
 }
