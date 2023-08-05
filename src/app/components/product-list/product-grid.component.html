@@ -3,7 +3,7 @@
     <img class="card-img-top" [src]="product.imageUrl" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{ product.name }}</h5>
-      <p class="card-text">{{ product.description }}</p>
+      <p class="card-text text-truncate">{{ product.description }}</p>
       <p class="card-text">{{ product.unitPrice | currency: 'USD' }}</p>
       <a href="#" class="btn btn-primary">Add to Cart</a>
     </div>
