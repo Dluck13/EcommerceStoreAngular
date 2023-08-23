@@ -1,0 +1,53 @@
+.card-container {
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 18rem;
+  }
+  
+
+  .container {
+    display: flex;
+    
+  }
+  
+ 
+  
+  .productContainer {
+    padding: 0px;
+  }
+
+
+  .categoryContainer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .category-list {
+    border: 1px solid #060000;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: coral;
+    margin: 10px;
+    text-decoration: none;
+    color: #060000;
+    display: block;
+    font-style: oblique;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
+
+  // .category-nav {
+  //   // padding: 10px 0; /* Vertical padding */
+  //   // display: flex;
+
+    
+  // }
+  
