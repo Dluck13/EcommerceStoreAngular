@@ -1,4 +1,5 @@
 export class Product {
+    public id: number;
     public sku: string;
     public name: string;
     public description: string;
@@ -10,6 +11,7 @@ export class Product {
     public updatedOn: Date;
 
     constructor(
+        id: number,
         sku: string,
         name: string,
         description: string,
@@ -20,6 +22,7 @@ export class Product {
         createdOn: Date,
         updatedOn: Date
       ) {
+        this.id = id;
         this.sku = sku;
         this.name = name;
         this.description = description;

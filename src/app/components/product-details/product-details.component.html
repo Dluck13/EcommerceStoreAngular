@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-lg-3">
+
+        <app-product-category></app-product-category>
+    
+    
+    </div>
+    <div class="col-lg-9">
+
+        <div class="row">
+            <!-- display product image -->
+            <div class="col-12 col-md-4">
+                <div class="thumbnail">
+                    <img src="{{product.imageUrl}}" width="300" height="300"/>
+
+                </div>
+
+            </div>
+            <!-- display product info -->
+            <div class="col-12 col-md-8">
+                <h3>{{product.name}}</h3>
+                <hr />
+                
+                <p>{{product.description}} </p>
+                <hr />
+
+                <h4>Price: <strong>{{product.unitPrice | currency: 'USD'}}</strong></h4>
+                <hr />
+
+                <h6>{{product.unitsInStock}}</h6>
+                <hr />
+
+                <a routerLink="/products" class="btn btn-success">
+                    <i class="fas fa-arrow-left"></i>Back
+                </a>
+
+                <a href="#" class="btn btn-primary ms-1">
+                    <i class="fas fa-cart-arrow-down"></i>Add to Cart
+                </a>
+                    
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

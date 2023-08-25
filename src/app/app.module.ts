@@ -10,9 +10,14 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductService } from './services/product.service';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ProductCategoryComponent } from './components/product-category/product-category.component';
+import { SearchComponent } from './components/search/search.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 const routes: Routes =[
  { path: 'products', component: ProductListComponent},
+ { path: 'search/:keyword', component: ProductListComponent},
+ { path: 'products/:id', component: ProductDetailsComponent},
  { path: 'category/:id', component: ProductListComponent},
  { path: '', redirectTo: '/products', pathMatch: 'full'},
  { path: '**', component: PageNotFoundComponent},
@@ -24,7 +29,10 @@ const routes: Routes =[
   declarations: [
     AppComponent,
     ProductListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductCategoryComponent,
+    SearchComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,3 +48,4 @@ const routes: Routes =[
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -1,0 +1,5 @@
+<div class="categoryContainer">
+      
+    <a class="category-list" *ngFor="let category of productCategories" [routerLink]="'/category/'+category.id" routerLinkActive="bg-primary text-white font-weight-bold">{{category.categoryName}}</a>
+   
+  </div>

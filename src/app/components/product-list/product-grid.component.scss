@@ -42,12 +42,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  
+ 
 
-  // .category-nav {
-  //   // padding: 10px 0; /* Vertical padding */
-  //   // display: flex;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .productContainer {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+  }
 
-    
-  // }
+  .card {
+    width: 100%; /* Full width for individual cards on smaller screens */
+    margin-bottom: 20px;
+  }
+}
+
   

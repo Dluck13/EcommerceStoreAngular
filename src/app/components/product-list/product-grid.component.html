@@ -1,28 +1,29 @@
 
 <div class="container">
   
-    <div class="categoryContainer">
-      
-      <a class="category-list" routerLink="/category/1" routerLinkActive="bg-primary text-white font-weight-bold">Web Development</a>
-      <a class="category-list" routerLink="/category/2" routerLinkActive="bg-primary text-white font-weight-bold" >Programming</a>
-      <a class="category-list" routerLink="/category/3" routerLinkActive="bg-primary text-white font-weight-bold">Database</a>
-      <a class="category-list" routerLink="/category/4" routerLinkActive="bg-primary text-white font-weight-bold" >Administrator</a>
-      
-    </div>
-   
+  <app-product-category></app-product-category>
+
 
   <div class="productContainer">
     
     <div class="card-container">
 
       <div class="card" *ngFor="let product of products">
+        <a routerLink="/products/{{product.id}}">
         <img class="card-img-top" [src]="product.imageUrl" alt="Card image cap">
+        </a>
         <div class="card-body">
-          <h5 class="card-title">{{ product.name }}</h5>
+          <h5 class="card-title">
+            <a routerLink="/products/{{product.id}}">{{product.name }}</a>
+          </h5>
           <p class="card-text text-truncate">{{ product.description }}</p>
           <p class="card-text">{{ product.unitPrice | currency: 'USD' }}</p>
           <a href="#" class="btn btn-primary">Add to Cart</a>
         </div>
+      </div>
+      <!-- If product doesn't exist print No products found -->
+      <div *ngIf="products?.length == 0" class="alert alert-warning">
+        No Products Found
       </div>
     </div>
 
